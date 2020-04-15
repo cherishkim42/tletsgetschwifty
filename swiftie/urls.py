@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
-    path('admin/', admin.site.urls),
+    path('polls/', include('polls.urls')), #always use include() when including other url patterns --
+    path('admin/', admin.site.urls),    # -- except admin.site.urls, which is the sole exception
+    path('', include('music.urls')) #want this to be site homepage
 ]
