@@ -1,0 +1,14 @@
+<!-- Display 7 studio albums here -->
+
+<h1>Taylor Swift!!</h1>
+
+{% if albums_list %}
+    <ul>
+    {% for album in albums_list %}
+        <li>{{ album.album_title }} </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Taylor Swift music for thee :(</p>
+{% endif %}
+

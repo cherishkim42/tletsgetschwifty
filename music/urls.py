@@ -6,5 +6,5 @@ from . import views
 urlpatterns = [
     # path('music', include(music.urls)),
     path('', views.index, name='index'),
-    path('<str:album_name>/', views.one_album, name='one_album'),
+    # path('<str:album_name>/', views.one_album, name='one_album'),
 ]
